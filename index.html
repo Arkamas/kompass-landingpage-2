@@ -1,16 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Völzke Consulting - KI-Weiterbildung mit staatlicher Förderung von bis zu 100%. Bilden Sie Ihre Mitarbeiter in KI & Automatisierung weiter." />
-    <meta name="keywords" content="KI-Weiterbildung, Künstliche Intelligenz, Automatisierung, staatliche Förderung, Unternehmensberatung" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Völzke Consulting - KI-Weiterbildung mit staatlicher Förderung von bis zu 100%. Bilden Sie Ihre Mitarbeiter in KI & Automatisierung weiter.">
+    <meta name="keywords" content="KI-Weiterbildung, Künstliche Intelligenz, Automatisierung, staatliche Förderung, Unternehmensberatung">
+    <meta property="og:title" content="Völzke Consulting - KI-Weiterbildung mit staatlicher Förderung">
+    <meta property="og:description" content="Völzke Consulting - KI-Weiterbildung mit staatlicher Förderung von bis zu 100%. Bilden Sie Ihre Mitarbeiter in KI & Automatisierung weiter.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://voelzke-consulting.de/">
+    <meta property="og:image" content="https://voelzke-consulting.de/og-image.jpg"> <!-- Placeholder, replace with actual image URL -->
     <title>Völzke Consulting - KI-Weiterbildung mit staatlicher Förderung</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles can go here if needed, or extend Tailwind */
+        .hero-bg {
+            background-color: #f0f7ff;
+        }
+        .text-blue-custom {
+            color: #0066ff;
+        }
+        .btn-primary {
+            background-color: #2196F3;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0b7dda;
+        }
+        .btn-outline {
+            border: 1px solid #673AB7;
+            color: #673AB7;
+        }
+        .btn-outline:hover {
+            background-color: #673AB7;
+            color: white;
+        }
+        .card-icon-bg-green {
+            background-color: #e8f5e9;
+        }
+        .card-icon-text-green {
+            color: #4CAF50;
+        }
+        .card-icon-bg-blue {
+            background-color: #e3f2fd;
+        }
+        .card-icon-text-blue {
+            color: #2196F3;
+        }
+        .card-icon-bg-purple {
+            background-color: #f3e5f5;
+        }
+        .card-icon-text-purple {
+            color: #9C27B0;
+        }
+        .process-step-bg {
+            background-color: #2196F3;
+            color: white;
+        }
+        .footer-bg {
+            background-color: #1a202c;
+        }
+        .footer-text {
+            color: #cbd5e0;
+        }
+        .footer-link:hover {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-[#f8fafc]">
+        <!-- Header -->
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-bold text-[#0047AB]">Völzke Consulting</h1>
+                    </div>
+                    <nav class="hidden md:flex space-x-2">
+                        <a href="#services" class="px-3 py-1 rounded-md bg-[#4CAF50] text-white hover:bg-[#45a049] transition-colors text-sm">Leistung</a>
+                        <a href="#process" class="px-3 py-1 rounded-md bg-[#2196F3] text-white hover:bg-[#0b7dda] transition-colors text-sm">Ablauf</a>
+                        <a href="#about" class="px-3 py-1 rounded-md bg-[#FF9800] text-white hover:bg-[#e68a00] transition-colors text-sm">Über uns</a>
+                        <a href="#contact" class="px-3 py-1 rounded-md bg-[#9C27B0] text-white hover:bg-[#7B1FA2] transition-colors text-sm">Kontakt</a>
+                    </nav>
+                    <button class="bg-[#2196F3] hover:bg-[#0b7dda] text-white text-sm px-4 py-2 rounded-md">
+                        Kostenloses Erstgespräch
+                    </button>
+                </div>
+            </div>
+        </header>
 
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 hero-bg">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="mb-4 px-2 py-1 inline-block bg-green-100 text-green-800 rounded-md text-sm">
+                            Staatliche Förderung bis zu 100%
+                        </div>
+                        <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                            Stellen Sie Ihr Unternehmen jetzt<br>
+                            <span class="text-blue-custom">zukunftssicher</span> auf
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8">
+                            Bilden Sie Ihre Mitarbeiter in KI & Automatisierung weiter 
+                            und sichern Sie sich eine staatliche Förderung von bis zu 
+                            100% (+bis zu 75% Lohnkosten).
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="px-6 py-3 rounded-md text-lg btn-primary">
+                                Förderfähigkeit prüfen lassen
+                            </button>
+                            <button class="px-6 py-3 rounded-md text-lg btn-outline">
+                                Mehr erfahren
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img 
+                            src="https://via.placeholder.com/600x400?text=KI+Consulting" 
+                            alt="KI Consulting" 
+                            class="rounded-lg shadow-lg w-full h-auto"
+                        />
+                        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+                            <div class="flex items-center space-x-2">
+                                <!-- Icon placeholder -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2196F3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h-5v-2a3 3 0 013-3h2a3 3 0 013 3v2h-5zm-5-10a3 3 0 11-6 0 3 3 0 016 0zm-9 7a4 4 0 014-4h2a4 4 0 014 4v1H3v-1z" />
+                                </svg>
+                                <span class="font-semibold">100+ Unternehmen</span>
+                            </div>
+                            <p class="text-sm text-gray-600">bereits erfolgreich beraten</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                        Warum KI-Weiterbildung jetzt?
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        KI entwickelt sich immer schneller. Verschaffen Sie sich einen Vorsprung 
+                        gegenüber der Konkurrenz und nutzen Sie die staatlichen Förderungen.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-8 border rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="mx-auto w-16 h-16 card-icon-bg-green rounded-full flex items-center justify-center mb-6">
+                            <!-- Icon placeholder -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 card-icon-text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8L11 17m-5 2a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Staatliche Förderung</h3>
+                        <p class="text-gray-600">
+                            Nehmen Sie das Geschenk vom Staat an. Lassen Sie Ihre Mitarbeiter zum 
+                            KI-Experten weiterbilden und erhalten Sie eine Förderung von bis zu 100%.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-8 border rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="mx-auto w-16 h-16 card-icon-bg-blue rounded-full flex items-center justify-center mb-6">
+                            <!-- Icon placeholder -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 card-icon-text-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.519 4.674c.3.921-.755 1.688-1.539 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.519-4.674a1 1 0 00-.363-1.118L2.927 8.5c-.783-.57-.381-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Wettbewerbsvorteil</h3>
+                        <p class="text-gray-600">
+                            Verschaffen Sie sich einen Vorsprung. Seien Sie Ihrer Konkurrenz einen 
+                            Schritt voraus und implementieren Sie KI in Ihrem Unternehmen.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-8 border rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="mx-auto w-16 h-16 card-icon-bg-purple rounded-full flex items-center justify-center mb-6">
+                            <!-- Icon placeholder -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 card-icon-text-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Zeit & Geld sparen</h3>
+                        <p class="text-gray-600">
+                            Mithilfe von KI und gezielten Automatisierungen können Sie sich und 
+                            Ihre Mitarbeiter enorm entlasten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-20 bg-[#f8fafc]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                        Der Ablauf
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        In nur 3 einfachen Schritten zur KI-Weiterbildung mit staatlicher Förderung
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 process-step-bg rounded-full flex items-center justify-center text-2xl font-bold mb-6">
+                            1
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Termin sichern</h3>
+                        <p class="text-gray-600">
+                            Vereinbaren Sie jetzt ein Beratungsgespräch mit einem Experten und 
+                            füllen Sie das Kontaktformular aus.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 process-step-bg rounded-full flex items-center justify-center text-2xl font-bold mb-6">
+                            2
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Expertengespräch</h3>
+                        <p class="text-gray-600">
+                            Unser Experte prüft, ob Ihr Unternehmen förderfähig ist und zeigt 
+                            Ihnen den Inhalt der Weiterbildung.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 process-step-bg rounded-full flex items-center justify-center text-2xl font-bold mb-6">
+                            3
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Antrag ausfüllen</h3>
+                        <p class="text-gray-600">
+                            Bei der Beantragung der Förderung unterstützt Sie unser kostenloser 
+                            Conciergeservice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img 
+                            src="https://via.placeholder.com/600x400?text=Völzke+Consulting+Team" 
+                            alt="Völzke Consulting Team" 
+                            class="rounded-lg shadow-lg w-full h-auto"
+                        />
+                    </div>
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                            Nadine Völzke & Sandra Völzke LL.M.
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Sandra Völzke LL.M. und Nadine Völzke sind die Geschäftsführerinnen der 
+                            Völzke Consulting GmbH mit Sitz in Deggendorf.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Sie führen selbst ein erfolgreiches Familienunternehmen und sind ein 
+                            staatlich zertifizierter Bildungsträger.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon placeholder -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#4CAF50]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Über 100 Unternehmen erfolgreich beraten</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon placeholder -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#4CAF50]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Spezialisiert auf KI & Automatisierung</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon placeholder -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#4CAF50]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         
+(Content truncated due to size limit. Use page ranges or line ranges to read remaining content)
+
+
+live
